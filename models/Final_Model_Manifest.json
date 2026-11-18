@@ -1,0 +1,18 @@
+{
+  "project": "SOUNDTRACE",
+  "device_classifier": "RandomForest_6Device_Final.joblib",
+  "device_anomaly_models": {
+    "FAN1": "FAN1_LOF17_Final.joblib",
+    "FAN2": "FAN2_LOF22A_Final.joblib",
+    "FAN3": "FAN3_LOF17_Final.joblib",
+    "REF1": "REF1_LOF17_Final.joblib",
+    "REF2": "REF2_LOF15B_Final.joblib",
+    "REF3": "REF3_LOF17_Final.joblib"
+  },
+  "fan2_selected_model": "LOF22A",
+  "segment_seconds": 2,
+  "consecutive_alert_segments": 3,
+  "rf_sample_rate": 16000,
+  "lof_sample_rate": "original_wav_rate",
+  "note": "PoC model selection; synthetic anomaly validation does not establish real fault detection performance."
+}
