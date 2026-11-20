@@ -206,8 +206,8 @@ def predict_live_segment(y, sr):
     device = str(rf.classes_[idx])
     confidence = float(proba[idx])
 
-    # 가전제품 식별 신뢰도 확인 (임시 기준 60%)
-    if confidence < 0.60:
+    # 가전제품 식별 신뢰도 확인 (시험 기준 80%)
+    if confidence < 0.80:
         return {
             'device': '식별 불확실',
             'confidence': confidence,
